@@ -28,7 +28,7 @@ const Header = () => {
         transition={{ duration: 1, delay: 1 }}
       >
         <LinkImage href="#inicio">
-          <Image src="src/assets/LOGO-AMARELA.svg" />
+          <Image src="/assets/LOGO-AMARELA.svg" />
         </LinkImage>
 
         <ContainerMenuMobile isVisible={menuIsVisible}>

@@ -23,13 +23,13 @@ const ImageButton = () => {
         <FsLightbox
           toggler={toggleImage}
           sources={[
-            "src/assets/foto-2.webp",
-            "src/assets/foto-3.webp",
-            "src/assets/foto-4.webp",
-            "src/assets/foto-5.webp",
-            "src/assets/foto-6.webp",
-            "src/assets/foto-7.webp",
-            "src/assets/foto-8.webp",
+            "/assets/foto-2.webp",
+            "/assets/foto-3.webp",
+            "/assets/foto-4.webp",
+            "/assets/foto-5.webp",
+            "/assets/foto-6.webp",
+            "/assets/foto-7.webp",
+            "/assets/foto-8.webp",
           ]}
         />
       </ContainerButton>

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <ContainerFooter>
       <div className="container-image-footer">
-        <img src="src/assets/LOGO-AMARELA.svg" alt="Logo Elite Gym Footer" />
+        <img src="/assets/LOGO-AMARELA.svg" alt="Logo Elite Gym Footer" />
         <div className="name-creator">
           <p>Desenvolvido por Daniel Formoso, 2025</p>
 

@@ -41,7 +41,7 @@ const Testemonials = () => {
       >
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-1.svg" alt="ícone Depoimento 1" />
+            <img src="/assets/avatar-1.svg" alt="ícone Depoimento 1" />
             <div>
               <FaStar />
               <FaStar />
@@ -73,7 +73,7 @@ const Testemonials = () => {
 
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-2.svg" alt="ícone Depoimento 2" />
+            <img src="/assets/avatar-2.svg" alt="ícone Depoimento 2" />
             <div>
               <FaStar />
               <FaStar />
@@ -103,7 +103,7 @@ const Testemonials = () => {
 
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-3.svg" alt="ícone Depoimento 3" />
+            <img src="/assets/avatar-3.svg" alt="ícone Depoimento 3" />
             <div>
               <FaStar />
               <FaStar />
@@ -133,7 +133,7 @@ const Testemonials = () => {
 
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-4.svg" alt="ícone Depoimento 4" />
+            <img src="/assets/avatar-4.svg" alt="ícone Depoimento 4" />
             <div>
               <FaStar />
               <FaStar />
@@ -163,7 +163,7 @@ const Testemonials = () => {
 
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-5.svg" alt="ícone Depoimento 5" />
+            <img src="/assets/avatar-5.svg" alt="ícone Depoimento 5" />
             <div>
               <FaStar />
               <FaStar />
@@ -193,7 +193,7 @@ const Testemonials = () => {
 
         <StyledSwiperSlide>
           <InfoSlide>
-            <img src="src/assets/avatar-6.svg" alt="ícone Depoimento 6" />
+            <img src="/assets/avatar-6.svg" alt="ícone Depoimento 6" />
             <div>
               <FaStar />
               <FaStar />

@@ -105,7 +105,7 @@ export const Image = styled.img`
     &.foto-2,
     &.foto-3,
     &.foto-4 {
-      transition: filtrer 0.6s ease;
+      transition: filter 0.3s ease;
       filter: grayscale(100%);
 
       &:hover {

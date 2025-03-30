@@ -31,28 +31,28 @@ const Introduction = () => {
       <ContainerImages>
         <MotionImage
           className="foto-1"
-          src="src/assets/foto-1.webp"
+          src="/assets/foto-1.webp"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3 }}
         />
         <MotionImage
           className="foto-2"
-          src="src/assets/foto-2.webp"
+          src="/assets/foto-2.webp"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.2 }}
         />
         <MotionImage
           className="foto-3"
-          src="src/assets/foto-3.webp"
+          src="/assets/foto-3.webp"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.6 }}
         />
         <MotionImage
           className="foto-4"
-          src="src/assets/foto-4.webp"
+          src="/assets/foto-4.webp"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.4 }}

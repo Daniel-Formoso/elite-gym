@@ -98,11 +98,11 @@ const AboutUs = () => {
           >
             <video
               className="horizontal-video"
-              poster="src/assets/video/poster-video.webp"
+              poster="/assets/video/poster-video.webp"
               controls
             >
               <source
-                src="src/assets/video/video-academia.mp4"
+                src="/assets/video/video-academia.mp4"
                 type="video/mp4"
                 media="(max-width: 820px)"
               />
@@ -110,11 +110,11 @@ const AboutUs = () => {
 
             <video
               className="vertical-video"
-              poster="src/assets/video/poster-video-vertical.webp"
+              poster="/assets/video/poster-video-vertical.webp"
               controls
             >
               <source
-                src="src/assets/video/video-academia-vertical.webm"
+                src="/assets/video/video-academia-vertical.webm"
                 media="(min-width: 1200px)"
               />
             </video>
