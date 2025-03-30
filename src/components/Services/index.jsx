@@ -15,25 +15,21 @@ import {
 } from "./styles";
 
 import { FaAsterisk } from "react-icons/fa6";
-import useInViewHook from "../../hook/useInViewHook";
 
 const PlansAndServices = () => {
-  const { ref, inView } = useInViewHook();
 
   return (
     <ContainerGeral id="plans">
       <MotionTitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, Y: 0 }}
         transition={{ duration: 1 }}
       >
         Nossos Planos
       </MotionTitleSection>
       <MotionSubtitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, Y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
         Descubra o plano feito <span>sob medida</span> para você!
@@ -41,9 +37,8 @@ const PlansAndServices = () => {
       <ContainerCards>
         <MotionContainerCard
           className="elite"
-          ref={ref}
           initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <NoteBetterPlan>
@@ -85,9 +80,8 @@ const PlansAndServices = () => {
         </MotionContainerCard>
 
         <MotionContainerCard
-          ref={ref}
           initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
           <TitlePlans>Plano Fit</TitlePlans>

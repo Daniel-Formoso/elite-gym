@@ -18,6 +18,7 @@ export const Button = styled.button`
   font-family: var(--montserrat);
   cursor: pointer;
   transition: 0.5s ease;
+  color: #000000;
 
   @media ${media.desktop} {
     &:hover {

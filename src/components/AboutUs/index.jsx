@@ -12,25 +12,20 @@ import {
 } from "./styles";
 import { FaDumbbell, FaUserTie, FaClipboardList } from "react-icons/fa";
 import { TbClock24 } from "react-icons/tb";
-import useInViewHook from "../../hook/useInViewHook";
 
 const AboutUs = () => {
-  const { ref, inView } = useInViewHook();
-
   return (
     <ContainerGeral id="about">
       <MotionTitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "tween", duration: 1 }}
       >
         Sobre Nós
       </MotionTitleSection>
       <MotionSubtitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ type: "tween", duration: 1, delay: 0.5 }}
       >
         Conheça nossa <span>jornada!</span>
@@ -38,9 +33,8 @@ const AboutUs = () => {
       <MotionContainerTextVideo>
         <TextAboutUs>
           <MotionTextAbout
-            ref={ref}
             initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 1, delay: 0.8 }}
           >
             Acreditamos que cada jornada de fitness é única e merece um ambiente
@@ -53,9 +47,8 @@ const AboutUs = () => {
             parte dessa transformação e experimente a mudança que você merece!
           </MotionTextAbout>
           <MotionListDifferences
-            ref={ref}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "tween", duration: 1, delay: 1.2 }}
           >
             <div className="titleDifferences">
@@ -91,9 +84,8 @@ const AboutUs = () => {
         </TextAboutUs>
         <div>
           <MotionVideoAboutUs
-            ref={ref}
             initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : {}}
+            whileInView={{ opacity: 1 }}
             transition={{ type: "tween", duration: 1, delay: 1.5 }}
           >
             <video

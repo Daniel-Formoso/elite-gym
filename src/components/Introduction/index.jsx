@@ -12,14 +12,14 @@ const Introduction = () => {
     <ContainerContent id="inicio">
       <MotionTitle
         initial={{ opacity: 0, x: -350 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, type: "tween", delay: 1.5 }}
       >
         <span>Desafie-se</span> na <Name>Elite Gym!</Name>
       </MotionTitle>
       <MotionSubtitle
         initial={{ opacity: 0, x: 350 }}
-        animate={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, type: "tween", delay: 2 }}
       >
         Na Elite Gym, sua jornada fitness começa com o suporte de uma equipe de
@@ -34,7 +34,7 @@ const Introduction = () => {
           src="/assets/foto-1.webp"
           loading="lazy"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3 }}
         />
         <MotionImage
@@ -42,7 +42,7 @@ const Introduction = () => {
           src="/assets/foto-2.webp"
           loading="lazy"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.2 }}
         />
         <MotionImage
@@ -50,7 +50,7 @@ const Introduction = () => {
           src="/assets/foto-3.webp"
           loading="lazy"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.6 }}
         />
         <MotionImage
@@ -58,7 +58,7 @@ const Introduction = () => {
           src="/assets/foto-4.webp"
           loading="lazy"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.4 }}
         />
       </ContainerImages>

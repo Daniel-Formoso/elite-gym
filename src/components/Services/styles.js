@@ -3,11 +3,10 @@ import { media } from "../../styles/globalStyles";
 import { motion } from "motion/react";
 
 export const ContainerCards = styled.div`
-  margin-top: 40px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 160px;
 
   @media ${media.tablet} {
     display: grid;

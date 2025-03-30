@@ -3,8 +3,11 @@ import { motion } from "motion/react";
 import { media } from "../../styles/globalStyles";
 
 export const ContainerGeral = styled.section`
-  margin-top: 150px;
-  padding-top: 140px;
+  padding-top: 100px;
+
+  @media ${media.tablet} {
+    padding-top: 140px;
+  }
 
   @media ${media.desktop} {
     padding-top: 200px;

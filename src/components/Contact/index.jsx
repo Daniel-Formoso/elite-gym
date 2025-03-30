@@ -4,25 +4,21 @@ import {
   MotionContainerForms,
   MotionContainerLocation,
 } from "./styles";
-import useInViewHook from "../../hook/useInViewHook";
 
 const Contact = () => {
-  const { ref, inView } = useInViewHook();
 
   return (
     <ContainerSectionContact id="contact">
       <MotionTitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         Contate-me
       </MotionTitleSection>
       <MotionSubtitleSection
-        ref={ref}
         initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         <span>Fale conosco</span> e dê o primeiro passo para sua nova rotina!
@@ -30,9 +26,8 @@ const Contact = () => {
 
       <div className="container-forms-map">
         <MotionContainerForms
-          ref={ref}
           initial={{ opacity: 0, x: -50 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
           <label>Nome:</label>
@@ -59,9 +54,8 @@ const Contact = () => {
         </MotionContainerForms>
 
         <MotionContainerLocation
-          ref={ref}
           initial={{ opacity: 0, x: 50 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
           <iframe

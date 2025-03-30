@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { media } from "../../styles/globalStyles";
 
 export const ContainerPaddingTop = styled.div`
-  padding-top: 100px;
+  margin-top: 120px;
 
   @media ${media.tablet} {
-    padding-top: 140px;
+    margin-top: 160px;
   }
 
   @media ${media.desktop} {
-    padding-top: 200px;
+    margin-top: 180px;
   }
-  
 `;

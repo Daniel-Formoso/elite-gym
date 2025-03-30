@@ -3,7 +3,15 @@ import { motion } from "motion/react";
 import { media } from "../../styles/globalStyles";
 
 export const ContainerSectionContact = styled.section`
-  padding-top: 200px;
+  margin-top: 130px;
+
+  @media ${media.tablet} {
+    margin-top: 150px;
+  }
+
+  @media ${media.desktop} {
+    margin-top: 180px;
+  }
 
   & > div.container-forms-map {
     @media ${media.desktop} {
@@ -92,6 +100,7 @@ export const ContainerForms = styled.div`
     font-size: 15px;
     margin-bottom: 25px;
     cursor: pointer;
+    color: #000000;
 
     @media ${media.desktop} {
       height: 60px;

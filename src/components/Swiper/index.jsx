@@ -9,16 +9,12 @@ import "swiper/css";
 import { FaStar, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
-import useInViewHook from "./../../hook/useInViewHook";
 
 const Testemonials = () => {
-  const { ref, inView } = useInViewHook();
-
   return (
     <MotionAnimationSwiper
-      ref={ref}
       initial={{ opacity: 0 }}
-      animate={inView ? { opacity: 1 } : {}}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       <StyledSwiper
