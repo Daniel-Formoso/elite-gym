@@ -1,0 +1,40 @@
+import FsLightbox from "fslightbox-react";
+import { useState } from "react";
+import { ContainerButton, MotionButton } from "./styles";
+
+const ImageButton = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const toggleImage = () => {
+    setToggle(!toggle);
+  };
+
+  return (
+    <>
+      <ContainerButton>
+        <MotionButton
+          onClick={toggleImage}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 3.4 }}
+        >
+          Explore as Fotos
+        </MotionButton>
+        <FsLightbox
+          toggler={toggleImage}
+          sources={[
+            "src/assets/foto-2.webp",
+            "src/assets/foto-3.webp",
+            "src/assets/foto-4.webp",
+            "src/assets/foto-5.webp",
+            "src/assets/foto-6.webp",
+            "src/assets/foto-7.webp",
+            "src/assets/foto-8.webp",
+          ]}
+        />
+      </ContainerButton>
+    </>
+  );
+};
+
+export default ImageButton;
