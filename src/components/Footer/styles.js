@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { media } from "../../styles/globalStyles";
 
 export const ContainerFooter = styled.footer`
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 20px 4% 0 4%;
   background-color: rgba(231, 231, 231, 0.75);
   box-shadow: rgba(100, 100, 111, 0.2) 0px -7px 29px 0px;

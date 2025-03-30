@@ -46,7 +46,6 @@ export const HeaderContainer = styled.div`
   right: 0;
   z-index: 10;
 
-
   @media ${media.desktop} {
     padding: 1% 15%;
   }
@@ -56,7 +55,7 @@ export const HeaderContainer = styled.div`
   }
 
   @media ${media.desktopUltraLarge} {
-    padding: .5% 25%;
+    padding: 0.5% 25%;
   }
 `;
 
@@ -105,8 +104,8 @@ export const LinkListMenuDesktop = styled.li`
     & > a {
       text-decoration: none;
       color: #000000;
-      font-size: 18px;
-      font-family: var(--roboto);
+      font-size: 15px;
+      font-family: var(--montserrat);
       border-bottom: 1px solid transparent;
       transition: border-bottom-color 0.5s ease;
 
@@ -121,11 +120,11 @@ export const LinkListMenuDesktop = styled.li`
 export const OurAppMenuDesktop = styled.li`
   @media ${media.desktop} {
     & > a {
-      font-family: var(--roboto);
+      font-family: var(--montserrat);
       text-decoration: none;
       color: #000000;
-      padding: 10px;
-      font-size: 16px;
+      padding: 7px 15px;
+      font-size: 15px;
       background-color: #ffcc00;
       border-radius: 20px;
       transition: 0.5s ease;

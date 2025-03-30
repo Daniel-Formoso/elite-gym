@@ -54,6 +54,8 @@ const Contact = () => {
 
           <label>Mensagem:</label>
           <textarea placeholder="Deixe sua mensagem" />
+
+          <button type="submit">Enviar</button>
         </MotionContainerForms>
 
         <MotionContainerLocation
@@ -67,9 +69,26 @@ const Contact = () => {
             allowfullscreen=""
             loading="lazy"
           />
-          <p>Rua dos Três Irmãos, 850</p>
-          <p>Vila Progredior, São Paulo - SP</p>
-          <p>04277-040, Brasil.</p>
+
+          <div className="container-info-location">
+            <p>
+              Nosso <span>Endereço:</span>
+            </p>
+            <ul>
+              <li>
+                <p>Rua dos Três Irmões, 850</p>
+              </li>
+              <li>
+                <p>Vila Progredir, São Paulo - SP</p>
+              </li>
+              <li>
+                <p>04277 - 040</p>
+              </li>
+              <li>
+                <p>De 6h às 23h</p>
+              </li>
+            </ul>
+          </div>
         </MotionContainerLocation>
       </div>
     </ContainerSectionContact>

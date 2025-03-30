@@ -61,9 +61,9 @@ export const TextAboutUs = styled.p`
     margin: 0;
     height: 100%;
     display: flex;
-    align-items: center;
-    gap: 60px
-}
+    align-istems: center;
+    justify-content: center;
+  }
 `;
 
 export const TextAbout = styled.div``;
@@ -73,31 +73,45 @@ export const MotionTextAbout = motion(TextAbout);
 export const ListDifferences = styled.div`
   margin-top: 30px;
 
-  & > ul {
-    list-style: none;
+  @media ${media.tablet} {
+    flex-direction: column;
+
+    & > ul {
+      width: 100%;
+    }
   }
 
-  & > ul li.titleDifferences {
+  @media ${media.desktop} {
+    width: 100%;
+  }
+
+  & > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  & > div.titleDifferences {
+    width: 100%;
     font-size: 25px;
     font-family: var(--ageo);
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
-  & > ul li.titleDifferences span {
+  & > div.titleDifferences span {
     color: #ffcc00;
   }
 
   & > ul li {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
 
-  @media ${media.tablet} {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  & > ul li .icon {
+    font-size: 30px;
   }
 
   @media ${media.desktop} {
@@ -111,10 +125,21 @@ export const ListDifferences = styled.div`
 
 export const MotionListDifferences = motion(ListDifferences);
 
-export const ButtonAboutUs = styled.button`
+export const ContainerButtonAboutUs = styled.div`
   margin-top: 20px;
+
+  @media ${media.tablet} {
+    width: 100%;
+  }
+
+  @media ${media.desktop} {
+    width: 100%;
+  }
+`;
+
+export const ButtonAboutUs = styled.button`
+  width: 60%;
   height: 40px;
-  width: 200px;
   outline: 0;
   border: none;
   background-color: #ffcc00;
@@ -124,11 +149,19 @@ export const ButtonAboutUs = styled.button`
   cursor: pointer;
   transition: 0.5s ease;
 
+  @media ${media.tablet} {
+    width: 30%;
+  }
+
+  @media ${media.desktop} {
+    width: 60%;
+  }
+
   & > a {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 7px 0;
+    padding: 10px 20px;
     border-radius: 20px;
   }
 

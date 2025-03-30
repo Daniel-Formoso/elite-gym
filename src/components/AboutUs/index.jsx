@@ -8,6 +8,7 @@ import {
   MotionTextAbout,
   MotionListDifferences,
   ButtonAboutUs,
+  ContainerButtonAboutUs,
 } from "./styles";
 import { FaDumbbell, FaUserTie, FaClipboardList } from "react-icons/fa";
 import { TbClock24 } from "react-icons/tb";
@@ -57,30 +58,35 @@ const AboutUs = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ type: "tween", duration: 1, delay: 1.2 }}
           >
-            <ul>
-              <li className="titleDifferences">
+            <div className="titleDifferences">
+              <p>
                 Nossos <span>Diferenciais:</span>
-              </li>
+              </p>
+            </div>
+
+            <ul>
               <li>
-                <TbClock24 />
+                <TbClock24 className="icon" />
                 Atendimento 24h
               </li>
               <li>
-                <FaUserTie />
+                <FaUserTie className="icon" />
                 Professores Qualificados
               </li>
               <li>
-                <FaDumbbell />
+                <FaDumbbell className="icon" />
                 Equipamentos Modernos
               </li>
               <li>
-                <FaClipboardList />
+                <FaClipboardList className="icon" />
                 Treinos Personalizados
               </li>
             </ul>
-            <ButtonAboutUs>
-              <a href="#">Venha nos conhecer!</a>
-            </ButtonAboutUs>
+            <ContainerButtonAboutUs>
+              <ButtonAboutUs>
+                <a href="#">Venha nos conhecer!</a>
+              </ButtonAboutUs>
+            </ContainerButtonAboutUs>
           </MotionListDifferences>
         </TextAboutUs>
         <div>

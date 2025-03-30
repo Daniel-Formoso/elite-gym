@@ -60,6 +60,25 @@ export const ContainerForms = styled.div`
     }
   }
 
+  & > button {
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 18px;
+    font-family: var(--montserrat);
+    background-color: #ffcc00;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+    @media ${media.desktop} {
+      &:hover {
+        background-color: rgba(255, 204, 0, 0.36);
+      }
+    }
+  }
+
   & > select {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
       rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -108,6 +127,32 @@ export const ContainerLocation = styled.div`
   margin-top: 50px;
   width: 100%;
 
+  & .container-info-location {
+    @media ${media.desktop} {
+      text-align: right;
+    }
+
+    & > p {
+      width: 100%;
+      font-size: 25px;
+      font-family: var(--ageo);
+      font-weight: 800;
+      margin-bottom: 15px;
+
+      & > span {
+        color: #ffcc00;
+      }
+    }
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      font-family: var(--roboto);
+    }
+  }
+
   @media ${media.tablet} {
     width: 100%;
     padding: 0 15%;
@@ -116,12 +161,6 @@ export const ContainerLocation = styled.div`
   @media ${media.desktop} {
     padding: 0;
     margin-top: 60px;
-  }
-
-  & > p {
-    font-size: 18px;
-    font-family: var(--ageo);
-    padding-bottom: 5px;
   }
 
   & > iframe {

@@ -118,11 +118,17 @@ export const ContainerButton = styled.div`
     background-color: #ffcc00;
     border: none;
     border-radius: 20px;
+    transition: 0.5s ease;
+
+    &:hover {
+      background-color: rgba(255, 204, 0, 0.36);
+    }
 
     & > a {
+      font-family: var(--montserrat);
       text-decoration: none;
       color: #000000;
-      font-size: 16px;
+      font-size: 15px;
       display: block;
       padding: 10px;
       border-radius: 20px;
