@@ -100,6 +100,7 @@ const AboutUs = () => {
               className="horizontal-video"
               poster="/assets/video/poster-video.webp"
               controls
+              loading="lazy"
             >
               <source
                 src="/assets/video/video-academia.mp4"
@@ -112,6 +113,7 @@ const AboutUs = () => {
               className="vertical-video"
               poster="/assets/video/poster-video-vertical.webp"
               controls
+              loading="lazy"
             >
               <source
                 src="/assets/video/video-academia-vertical.webm"

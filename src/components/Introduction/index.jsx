@@ -32,6 +32,7 @@ const Introduction = () => {
         <MotionImage
           className="foto-1"
           src="/assets/foto-1.webp"
+          loading="lazy"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3 }}
@@ -39,6 +40,7 @@ const Introduction = () => {
         <MotionImage
           className="foto-2"
           src="/assets/foto-2.webp"
+          loading="lazy"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.2 }}
@@ -46,6 +48,7 @@ const Introduction = () => {
         <MotionImage
           className="foto-3"
           src="/assets/foto-3.webp"
+          loading="lazy"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.6 }}
@@ -53,6 +56,7 @@ const Introduction = () => {
         <MotionImage
           className="foto-4"
           src="/assets/foto-4.webp"
+          loading="lazy"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 3.4 }}
