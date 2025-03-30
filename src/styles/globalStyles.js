@@ -20,6 +20,10 @@ export const MyGlobalStyles = createGlobalStyle`
     --roboto: "Roboto", sans-serif;
     --montserrat: "Montserrat", sans-serif;
 }
+
+html, body {
+  overflow-x: hidden;
+}
  
  * {
     box-sizing: border-box;
@@ -28,7 +32,6 @@ export const MyGlobalStyles = createGlobalStyle`
   }
 
   body {
-    overflow-x: hidden;
     background-color: #f5f5f5;
     scroll-behavior: smooth;
   }
