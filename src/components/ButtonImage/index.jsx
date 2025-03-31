@@ -16,7 +16,7 @@ const ImageButton = () => {
           onClick={toggleImage}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3.4 }}
+          transition={{ duration: 1, delay: 1 }}
         >
           Explore as Fotos
         </MotionButton>
