@@ -15,6 +15,20 @@ export const media = {
 };
 
 export const MyGlobalStyles = createGlobalStyle`
+  ::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
  :root {
     --ageo: "Ageo", sans-serif;
     --roboto: "Roboto", sans-serif;
@@ -24,7 +38,7 @@ export const MyGlobalStyles = createGlobalStyle`
 html, body {
   overflow-x: hidden;
 }
- 
+
  * {
     box-sizing: border-box;
     margin: 0;
