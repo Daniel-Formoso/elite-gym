@@ -14,7 +14,7 @@ export const ContainerGeral = styled.section`
   }
 
   @media ${media.desktopUltraLarge} {
-    padding-top: 200px;
+    padding-top: 170px;
   }
 `;
 
