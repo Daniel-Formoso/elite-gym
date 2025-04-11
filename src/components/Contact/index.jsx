@@ -70,7 +70,7 @@ const Contact = () => {
             </p>
             <ul>
               <li>
-                <p>Rua dos Três Irmões, 850</p>
+                <p>Rua dos Três Irmãos, 850</p>
               </li>
               <li>
                 <p>Vila Progredir, São Paulo - SP</p>
